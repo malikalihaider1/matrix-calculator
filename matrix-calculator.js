@@ -6,8 +6,7 @@ const resultDiv = document.querySelector("#result");
 const minusBtn = document.querySelector("#minus");
 
 let matrixLength;
-let operation; // Define the operation variable
-
+let operation;
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     
@@ -27,13 +26,13 @@ form.addEventListener("submit", (event) => {
 });
 
 sumBtn.addEventListener("click", () => {
-    operation = "sum"; // Set operation to sum
-    addMatrix(); // Call addMatrix directly since we know the operation
+    operation = "sum"; 
+    addMatrix(); 
 });
 
 minusBtn.addEventListener("click", () => {
-    operation = "subtract"; // Set operation to subtract
-    minusMatrix(); // Call minusMatrix directly since we know the operation
+    operation = "subtract"; 
+    minusMatrix(); 
 });
 
 const addMatrix = () => {
